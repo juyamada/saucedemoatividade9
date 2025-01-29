@@ -24,5 +24,8 @@ public class ProductsPage extends CommonPage{
         driver.findElement(By.cssSelector(cssSelector)).click();
 
     }
+    public void clicarCarrinho(){
+        itemCarrinho.click();
+    }
 }
 

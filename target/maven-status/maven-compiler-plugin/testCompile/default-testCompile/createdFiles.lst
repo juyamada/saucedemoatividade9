@@ -1,0 +1,8 @@
+pages\ProductsPage.class
+pages\CommonPage.class
+pages\HomePage.class
+steps\ComprarItens.class
+steps\Runner.class
+pages\CheckoutPage.class
+steps\Hooks.class
+pages\Base.class

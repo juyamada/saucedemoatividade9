@@ -15,10 +15,10 @@ public class HomePage extends CommonPage{
 
     // mapear elementos
     @FindBy (id = "user-name")
-    WebElement username;
+    WebElement campoUsername;
     
     @FindBy (id = "password")
-    WebElement password;
+    WebElement campoPassword;
 
     @FindBy (id = "login-button")
     WebElement botaoLogin;
@@ -32,20 +32,20 @@ public class HomePage extends CommonPage{
         driver.get(url);
     }
 
-    public void preencherUsuario (String username){
-        username.sendKeys(username);
+    public void preencherUsername (String username){
+        campoUsername.sendKeys(username);
     }
 
     public void preencherSenha (String password){
-        password.sendKeys(password);
+        campoPassword.sendKeys(password);
     }
 
     public void clicarBotaoLogin(){
         botaoLogin.click();
     }
 
-    public void lerNomeDaGuia(){
-        logo.getText();
+    public String lerNomeDaGuia(){
+        return logo.getText();
     }
     
     
